@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivashti Group of IIT (SGIIT) | ISO 9001:2015 Certified Computer Institute | Keharwin Chowk, Hamirpur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        sgiit: {
+                            red: '#E52424',
+                            'red-dark': '#C61A1A',
+                            'red-light': '#FFF1F1',
+                            blue: '#1E2B88',
+                            'blue-deep': '#0F174A',
+                            'cyan-badge': '#0077C8',
+                            'cyan-light': '#EBF7FF',
+                            gold: '#FBBF24',
+                            dark: '#0B132B',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        brand: ['Outfit', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glow-blue': '0 0 25px -5px rgba(30, 43, 136, 0.25)',
+                        'glow-red': '0 0 25px -5px rgba(229, 36, 36, 0.25)',
+                        'subtle-card': '0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 2px 8px -2px rgba(0, 0, 0, 0.02)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom sleek scrollbar */
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+
+        /* Modern tech grid backdrop */
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(226, 232, 240, 0.5) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(226, 232, 240, 0.5) 1px, transparent 1px);
+        }
+
+        /* Banner Ribbon Arrow Cuts on Left & Right */
+        .ribbon-banner {
+            position: relative;
+            background: #0077C8;
+            color: #FFFFFF;
+            clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0% 50%);
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.03); }
+        }
+        .animate-pulse-subtle {
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50/70 text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-sgiit-red selection:text-white">
+
+    <!-- Top Gov & ISO Accreditation Bar -->
+    <div class="bg-sgiit-dark text-slate-200 text-xs py-2 px-4 border-b border-slate-800/80 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-center md:text-left">
+                <span class="inline-flex items-center gap-1.5 text-amber-400 font-bold tracking-wide">
+                    <i class="fa-solid fa-certificate text-amber-400"></i> AN ISO 9001:2015 CERTIFIED INSTITUTE
+                </span>
+                <span class="hidden lg:inline text-slate-600">|</span>
+                <span class="text-slate-300 font-medium text-[11px] sm:text-xs">
+                    <i class="fa-solid fa-landmark text-sky-400 mr-1"></i> Regd: Ministry of Micro, Small &amp; Medium Enterprises, Govt. of India
+                </span>
+            </div>
+            
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:9888297705" class="hover:text-amber-400 transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone text-sgiit-red"></i> 9888297705
+                </a>
+                <span class="text-slate-700">/</span>
+                <a href="tel:9882222701" class="hover:text-amber-400 transition hidden sm:flex items-center gap-1 font-semibold">
+                    9882222701
+                </a>
+                <span class="text-slate-700 hidden sm:inline">|</span>
+                <a href="mailto:sonu12004@gmail.com" class="hover:text-amber-400 transition hidden lg:flex items-center gap-1.5 text-slate-300">
+                    <i class="fa-solid fa-envelope text-sky-400"></i> sonu12004@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Modern Glass Navigation -->
+    <header class="sticky top-[37px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-xs transition duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24 sm:h-28">
+                
+                <!-- Logo Component (Direct rendering of uploaded logo) -->
+                <a href="#home" onclick="navigateTo('home')" class="flex items-center group py-2 focus:outline-none" title="Shivashti Group of IIT">
+                    
+                    <!-- Container with either custom uploaded image or exact pixel-perfect vector representation -->
+                    <div class="flex items-center gap-3">
+                        <div id="logoContainer" class="flex items-center">
+                            <img src="assets/logo.png" alt="Shivashti Group of IIT" width="900" height="254" class="h-16 sm:h-20 max-w-[280px] object-contain">
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Modern Center Navigation Links -->
+                <nav class="hidden xl:flex items-center gap-1 font-sans text-xs">
+                    <button onclick="navigateTo('home')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="home">
+                        <i class="fa-solid fa-house text-slate-400 text-[11px]"></i> Home
+                    </button>
+                    <button onclick="navigateTo('about')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="about">
+                        <i class="fa-solid fa-building-columns text-slate-400 text-[11px]"></i> About Us
+                    </button>
+                    <button onclick="navigateTo('courses')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="courses">
+                        <i class="fa-solid fa-graduation-cap text-slate-400 text-[11px]"></i> Courses
+                    </button>
+                    <button onclick="navigateTo('graphic-designing')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="graphic-designing">
+                        <i class="fa-solid fa-bezier-curve text-slate-400 text-[11px]"></i> Graphic Designing
+                    </button>
+                    <button onclick="navigateTo('csc-services')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="csc-services">
+                        <i class="fa-solid fa-id-card text-slate-400 text-[11px]"></i> CSC Services
+                    </button>
+                    <button onclick="navigateTo('verification')" class="nav-link px-3.5 py-2 rounded-xl text-sgiit-blue bg-blue-50 border border-blue-200/80 hover:bg-blue-100 font-extrabold transition flex items-center gap-1.5 shadow-2xs" data-nav="verification">
+                        <i class="fa-solid fa-shield-check text-blue-600 text-xs"></i> Certificate Verification
+                    </button>
+                    <button onclick="navigateTo('contact')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="contact">
+                        <i class="fa-solid fa-envelope text-slate-400 text-[11px]"></i> Contact Us
+                    </button>
+                </nav>
+
+                <!-- Header Actions & Mobile Burger -->
+                <div class="flex items-center gap-2.5 sm:gap-3">
+                    <!-- Quick Logo Manager Dropdown (Allows user to inspect or load custom file if needed) -->
+                    <button onclick="toggleLogoUploaderModal()" title="Upload / Adjust Logo File" class="p-2 rounded-xl border border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition text-xs flex items-center gap-1">
+                        <i class="fa-solid fa-image"></i>
+                        <span class="hidden md:inline text-[11px] font-semibold">Logo</span>
+                    </button>
+
+                    <button onclick="openEnquiryModal('New Student Admission')" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-sgiit-red to-sgiit-red-dark hover:from-sgiit-red-dark hover:to-red-800 text-white text-xs font-bold rounded-xl shadow-glow-red transition transform active:scale-95">
+                        <i class="fa-solid fa-user-graduate"></i> Admission Enquiry
+                    </button>
+
+                    <button id="mobileMenuToggle" class="xl:hidden p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 focus:outline-none transition" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars text-xl" id="menuToggleIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileDrawer" class="hidden xl:hidden bg-white/98 backdrop-blur-lg border-b border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-xl animate-fade">
+            <div class="grid grid-cols-1 gap-1">
+                <button onclick="navigateTo('home')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-house text-slate-400 text-xs w-5"></i> Home</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+                <button onclick="navigateTo('about')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-building-columns text-slate-400 text-xs w-5"></i> About Us</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+                <button onclick="navigateTo('courses')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-slate-400 text-xs w-5"></i> Courses (7 Programs)</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+                <button onclick="navigateTo('graphic-designing')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-bezier-curve text-slate-400 text-xs w-5"></i> Graphic Designing Track</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+                <button onclick="navigateTo('csc-services')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-id-card text-slate-400 text-xs w-5"></i> CSC Services (11 Desk)</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+                <button onclick="navigateTo('verification')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-extrabold text-sgiit-blue bg-blue-50 border border-blue-200 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-shield-check text-blue-600 text-xs w-5"></i> Certificate Verification</span>
+                    <i class="fa-solid fa-angle-right text-xs text-blue-600"></i>
+                </button>
+                <button onclick="navigateTo('contact')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-slate-400 text-xs w-5"></i> Contact Us</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-2 gap-2">
+                <a href="tel:9888297705" class="text-center py-2.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-sgiit-red"></i> Call Office
+                </a>
+                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20to%20enquire%20about%20admissions." target="_blank" class="text-center py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dynamic Router Sections -->
+    <main class="flex-grow">
+        
+        <!-- ============================================== -->
+        <!-- VIEW: HOME PAGE                               -->
+        <!-- ============================================== -->
+        <div id="view-home" class="page-view">
+            <!-- Modern Hero Section -->
+            <section class="relative bg-gradient-to-b from-slate-100 via-white to-slate-50 border-b border-slate-200 py-12 md:py-20 overflow-hidden bg-grid-pattern">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid lg:grid-cols-12 gap-12 items-center">
+                        
+                        <!-- Left Content -->
+                        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-slate-200/90 shadow-2xs text-xs font-bold text-slate-800 backdrop-blur">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                AN ISO 9001:2015 CERTIFIED INSTITUTE &bull; MSME REGD.
+                            </div>
+
+                            <div class="space-y-2">
+                                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight font-brand leading-[1.1]">
+                                    Shivashti Group of IIT
+                                </h1>
+                                <p class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-sgiit-blue via-blue-700 to-sgiit-red bg-clip-text text-transparent">
+                                    Professional Computer Education &amp; Digital Services
+                                </p>
+                            </div>
+
+                            <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                                Empowering Himachal’s ambitious students, job seekers, and digital creators with practical, job-oriented computer courses and authorized CSC citizen e-governance services. Based at Keharwin Chowk, Distt Hamirpur.
+                            </p>
+
+                            <!-- Modern Action Buttons -->
+                            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+                                <button onclick="navigateTo('courses')" class="px-6 py-3.5 rounded-xl bg-sgiit-blue hover:bg-sgiit-blue-deep text-white font-extrabold text-xs sm:text-sm shadow-glow-blue transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                                    <i class="fa-solid fa-graduation-cap"></i> Explore Courses
+                                </button>
+                                <button onclick="navigateTo('verification')" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-sgiit-blue font-extrabold text-xs sm:text-sm border border-slate-300 shadow-2xs transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                                    <i class="fa-solid fa-shield-halved text-blue-600"></i> Verify Certificate
+                                </button>
+                                <button onclick="navigateTo('contact')" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sgiit-red to-sgiit-red-dark hover:from-sgiit-red-dark hover:to-red-800 text-white font-extrabold text-xs sm:text-sm shadow-glow-red transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Contact Us
+                                </button>
+                            </div>
+
+                            <!-- Trust Badges Bar -->
+                            <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 border-t border-slate-200/80 text-xs">
+                                <div class="p-3 rounded-xl bg-white/80 backdrop-blur border border-slate-200 shadow-2xs">
+                                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-sgiit-blue">
+                                        <i class="fa-solid fa-desktop text-sm"></i> 100% Practical Lab
+                                    </div>
+                                    <span class="text-slate-500 text-[11px]">Individual computer training</span>
+                                </div>
+                                <div class="p-3 rounded-xl bg-white/80 backdrop-blur border border-slate-200 shadow-2xs">
+                                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-emerald-600">
+                                        <i class="fa-solid fa-id-card-clip text-sm"></i> Genuine Registry
+                                    </div>
+                                    <span class="text-slate-500 text-[11px]">Online Verifiable Credentials</span>
+                                </div>
+                                <div class="p-3 rounded-xl bg-white/80 backdrop-blur border border-slate-200 shadow-2xs col-span-2 sm:col-span-1">
+                                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-sgiit-red">
+                                        <i class="fa-solid fa-cubes text-sm"></i> Direct CSC Desk
+                                    </div>
+                                    <span class="text-slate-500 text-[11px]">11+ citizen online services</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Modern Branding Showcase Card -->
+                        <div class="lg:col-span-5">
+                            <div class="relative max-w-md mx-auto">
+                                <!-- Glowing blur backdrops -->
+                                <div class="absolute -top-6 -right-6 w-56 h-56 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
+                                <div class="absolute -bottom-6 -left-6 w-56 h-56 bg-red-400/20 rounded-full blur-3xl pointer-events-none"></div>
+                                
+                                <div class="relative bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl overflow-hidden">
+                                    <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                                            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                        </div>
+                                        <span class="text-[11px] font-extrabold uppercase text-slate-400 tracking-wider">OFFICIAL RECOGNITION</span>
+                                    </div>
+
+                                    <!-- Exact Logo Display Box -->
+                                    <div class="bg-gradient-to-b from-slate-50 to-white rounded-2xl p-4 border border-slate-200/80 shadow-inner flex flex-col items-center text-center">
+                                        <img src="assets/computer-screen.svg" alt="Illustration of a computer screen showing a dashboard and code" width="640" height="480" class="w-full h-auto rounded-xl border border-slate-100">
+                                       
+                                    </div>
+
+                                    <div class="mt-5 space-y-2 text-center text-xs">
+                                        <div class="font-bold text-slate-800 flex items-center justify-center gap-1.5">
+                                            <i class="fa-solid fa-location-dot text-sgiit-red"></i>
+                                            Keharwin Chowk, Distt Hamirpur, H.P.
+                                        </div>
+                                        <p class="text-slate-500 text-[11px]">
+                                            Govt. of India MSME Regd &bull; ISO 9001:2015
+                                        </p>
+                                        
+                                        <div class="pt-2 flex justify-center gap-2">
+                                            <a href="tel:9888297705" class="px-3.5 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-sgiit-blue font-bold text-xs transition">
+                                                <i class="fa-solid fa-phone mr-1 text-xs"></i> 9888297705
+                                            </a>
+                                            <a href="tel:9882222701" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition">
+                                                <i class="fa-solid fa-phone mr-1 text-xs"></i> 9882222701
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 1: About Institute Overview -->
+            <section class="py-16 bg-white border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-12 gap-10 items-center">
+                        <div class="lg:col-span-6 space-y-4">
+                            <span class="px-3 py-1 rounded-lg bg-red-50 text-sgiit-red text-xs font-bold uppercase tracking-wider">
+                                About Institute
+                            </span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 font-brand leading-tight">
+                                High Standard Computer Training in Keharwin Chowk, Hamirpur
+                            </h2>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                <strong>Shivashti Group of IIT</strong> is dedicated to delivering industry-ready computer education. As an <strong>ISO 9001:2015 certified institute</strong> registered under the <strong>Ministry of Micro, Small &amp; Medium Enterprises (Govt. of India)</strong>, we focus on genuine practical training, individual PC assignment, and certified curriculum standards.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Beyond classroom learning, our center operates an integrated CSC (Common Services Center) desk to provide crucial government documentation and online registration support to students and local residents.
+                            </p>
+                            <div class="pt-2">
+                                <button onclick="navigateTo('about')" class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition inline-flex items-center gap-2">
+                                    <span>Learn More About SGIIT</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 4 Stat Highlight Cards -->
+                        <div class="lg:col-span-6 grid sm:grid-cols-2 gap-4">
+                            <div class="p-5 rounded-2xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:shadow-subtle-card transition">
+                                <div class="w-11 h-11 rounded-xl bg-blue-100/70 text-sgiit-blue flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-stamp"></i>
+                                </div>
+                                <h4 class="text-slate-900 font-bold text-sm">ISO 9001:2015 Certified</h4>
+                                <p class="text-slate-500 text-xs mt-1">Standardized quality protocols for practical curriculum delivery.</p>
+                            </div>
+                            <div class="p-5 rounded-2xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:shadow-subtle-card transition">
+                                <div class="w-11 h-11 rounded-xl bg-red-100/70 text-sgiit-red flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-landmark"></i>
+                                </div>
+                                <h4 class="text-slate-900 font-bold text-sm">Govt. MSME Regd.</h4>
+                                <p class="text-slate-500 text-xs mt-1">Recognized under Ministry of MSME, Government of India.</p>
+                            </div>
+                            <div class="p-5 rounded-2xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:shadow-subtle-card transition">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-100/70 text-emerald-700 flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <h4 class="text-slate-900 font-bold text-sm">Individual PC Allocation</h4>
+                                <p class="text-slate-500 text-xs mt-1">Every student practices on dedicated computers in our lab.</p>
+                            </div>
+                            <div class="p-5 rounded-2xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:shadow-subtle-card transition">
+                                <div class="w-11 h-11 rounded-xl bg-purple-100/70 text-purple-700 flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                </div>
+                                <h4 class="text-slate-900 font-bold text-sm">Online Certificate Check</h4>
+                                <p class="text-slate-500 text-xs mt-1">Instant digital record verification for all passed-out students.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Quick Explore Offerings -->
+            <section class="py-16 bg-slate-50 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-12">
+                        <span class="px-3 py-1 rounded-lg bg-blue-50 text-sgiit-blue text-xs font-bold uppercase tracking-wider">
+                            Explore Programs &amp; Desk
+                        </span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 font-brand mt-2">
+                            Comprehensive Learning &amp; Citizen Desk
+                        </h2>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Choose between our verified computer diplomas, creative design tracks, or digital CSC services.
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Card 1: Our Courses -->
+                        <div class="p-6 rounded-3xl bg-white border border-slate-200 shadow-subtle-card flex flex-col justify-between hover:border-sgiit-blue transition group">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-sgiit-blue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-blue-600 uppercase tracking-wide">Computer Education</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-1">Our Courses</h3>
+                                <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                                    7 official programs including Basic Computer, Computer Applications (CCA/DCA), Financial Accounting (Tally), Graphic Designing &amp; VFX.
+                                </p>
+                            </div>
+                            <div class="pt-6 mt-4 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-xs font-semibold text-slate-400">7 Courses Available</span>
+                                <button onclick="navigateTo('courses')" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-sgiit-blue hover:text-white text-slate-700 font-bold text-xs transition">
+                                    View Courses &rarr;
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Graphic Designing Track -->
+                        <div class="p-6 rounded-3xl bg-white border border-slate-200 shadow-subtle-card flex flex-col justify-between hover:border-sgiit-red transition group">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-red-50 text-sgiit-red flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                                    <i class="fa-solid fa-bezier-curve"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-sgiit-red uppercase tracking-wide">Creative Studio</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-1">Graphic Designing</h3>
+                                <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                                    Specialized creative tracks: 3D Design, Motion Graphics, UI/UX, Video Post-Production, Web Interfaces, and Game Asset creation.
+                                </p>
+                            </div>
+                            <div class="pt-6 mt-4 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-xs font-semibold text-slate-400">7 Disciplines</span>
+                                <button onclick="navigateTo('graphic-designing')" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-sgiit-red hover:text-white text-slate-700 font-bold text-xs transition">
+                                    View Design Tracks &rarr;
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: CSC Services -->
+                        <div class="p-6 rounded-3xl bg-white border border-slate-200 shadow-subtle-card flex flex-col justify-between hover:border-emerald-600 transition group">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                                    <i class="fa-solid fa-id-card"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wide">Citizen Desk</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-1">CSC Services</h3>
+                                <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                                    Authorized facilitation for PAN Card, Passport, Driving Licence, Vehicle Tax &amp; Insurance, PVC cards, and Government Job Online Form Filling.
+                                </p>
+                            </div>
+                            <div class="pt-6 mt-4 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-xs font-semibold text-slate-400">11 Active Services</span>
+                                <button onclick="navigateTo('csc-services')" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-700 font-bold text-xs transition">
+                                    View CSC Services &rarr;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Why Choose Us -->
+            <section class="py-16 bg-white border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-12">
+                        <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider">
+                            Why SGIIT
+                        </span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 font-brand mt-2">
+                            Quality, Authenticity &amp; Practical Experience
+                        </h2>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Transparent technical education without exaggerated claims or fake reviews.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-sgiit-blue flex items-center justify-center text-lg mb-3">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <h4 class="text-slate-900 font-bold text-base mb-1">Expert Hands-on Guidance</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Daily structured lab time with guided supervision, enabling students to gain genuine software proficiency.
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 text-sgiit-red flex items-center justify-center text-lg mb-3">
+                                <i class="fa-solid fa-file-shield"></i>
+                            </div>
+                            <h4 class="text-slate-900 font-bold text-base mb-1">Authentic ISO Certification</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Our institution strictly operates according to ISO 9001:2015 educational parameters with valid, verifiable credentials.
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-3">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <h4 class="text-slate-900 font-bold text-base mb-1">Convenient Keharwin Chowk Hub</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Centrally situated in Distt. Hamirpur with great transit accessibility and bundled CSC citizen solutions under one roof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modern Fast Callout Banner -->
+            <section class="py-12 bg-gradient-to-r from-sgiit-blue-deep via-slate-900 to-sgiit-blue text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-center md:text-left space-y-1">
+                        <span class="text-xs uppercase font-bold tracking-widest text-amber-400">Keharwin Chowk, Hamirpur</span>
+                        <h3 class="text-2xl font-extrabold font-brand">Want to verify your certificate or enroll?</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm">Call us directly or send a WhatsApp message to our admission desk.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-3">
+                        <a href="tel:9888297705" class="px-5 py-3 rounded-xl bg-sgiit-red hover:bg-sgiit-red-dark text-white font-bold text-xs shadow-md transition flex items-center gap-2">
+                            <i class="fa-solid fa-phone"></i> Call 9888297705
+                        </a>
+                        <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20information%20about%20your%20courses." target="_blank" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: ABOUT US PAGE                            -->
+        <!-- ============================================== -->
+        <div id="view-about" class="page-view hidden">
+            <section class="py-14 bg-white border-b border-slate-200">
+                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-10">
+                        <span class="px-3 py-1 rounded-lg bg-blue-50 text-sgiit-blue text-xs font-bold uppercase tracking-wider">
+                            Institutional Profile
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 font-brand mt-2">
+                            About Shivashti Group of IIT
+                        </h1>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">Keharwin Chowk, Distt Hamirpur, Himachal Pradesh, INDIA</p>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 space-y-6 text-sm text-slate-700 leading-relaxed shadow-2xs">
+                        <h3 class="text-xl font-bold text-slate-900 font-brand">Our Vision &amp; Purpose</h3>
+                        <p>
+                            <strong>Shivashti Group of IIT (SGIIT)</strong> was established to bridge the gap between theoretical schooling and genuine digital competence. Situated at the accessible hub of Keharwin Chowk in Distt Hamirpur, we equip students with hands-on skills in basic computing, professional accounting, graphic design, and media arts.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-5 rounded-2xl bg-white border border-slate-200">
+                                <div class="flex items-center gap-2 font-bold text-slate-900 text-sm text-sgiit-blue mb-1.5">
+                                    <i class="fa-solid fa-award text-amber-500"></i> ISO 9001:2015 Standards
+                                </div>
+                                <p class="text-xs text-slate-600">
+                                    Quality management certification guaranteeing methodical syllabus completion, periodic assessments, and standardized student evaluation.
+                                </p>
+                            </div>
+                            <div class="p-5 rounded-2xl bg-white border border-slate-200">
+                                <div class="flex items-center gap-2 font-bold text-slate-900 text-sm text-sgiit-red mb-1.5">
+                                    <i class="fa-solid fa-building-flag text-sgiit-red"></i> MSME Govt. of India
+                                </div>
+                                <p class="text-xs text-slate-600">
+                                    Official enterprise registration providing authorized educational and digital citizen service operations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 font-brand pt-2">Lab Infrastructure &amp; CSC Operations</h3>
+                        <p>
+                            Our campus is equipped with contemporary computing systems, high-speed fiber internet, modern software packages, and trained instructors. Simultaneously, our authorized CSC (Common Services Center) desk handles documentation services such as PAN, Passport, vehicle documents, and state/central government recruitment forms.
+                        </p>
+
+                        <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+                            <span>Campus Address: Keharwin Chowk, Hamirpur, H.P.</span>
+                            <span>Direct Contact: 9888297705 | sonu12004@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: COURSES (Exact 7 programs)              -->
+        <!-- ============================================== -->
+        <div id="view-courses" class="page-view hidden">
+            <section class="py-14 bg-slate-50 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <span class="px-3 py-1 rounded-lg bg-blue-50 text-sgiit-blue text-xs font-bold uppercase tracking-wider">
+                            Curriculum &amp; Training
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 font-brand mt-2">
+                            Our Courses
+                        </h1>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Official certificate and diploma programs offered at Shivashti Group of IIT.
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <!-- 1. Certificate in Basic Computer Course -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-blue transition group">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">Certificate</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #1</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-blue transition">
+                                    1. Certificate in Basic Computer Course
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    Essential computer fundamentals including computer hardware parts, Windows OS management, MS Word document typing, basic Excel spreadsheets, internet browsing, email management, and digital safety.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Certification</span>
+                                <button onclick="openEnquiryModal('Certificate in Basic Computer Course')" class="px-3.5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 2. Certificate in Computer Application -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-blue transition group">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">Certificate</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #2</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-blue transition">
+                                    2. Certificate in Computer Application
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    Thorough office computing practice covering advanced Word processing, formatted tables and mail merge, functional spreadsheet formulas, PowerPoint slide design, and introduction to database management.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Certification</span>
+                                <button onclick="openEnquiryModal('Certificate in Computer Application')" class="px-3.5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 3. Certificate in Finance Accounting -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-blue transition group">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">Accounting</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #3</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-blue transition">
+                                    3. Certificate in Finance Accounting
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    Foundations of double-entry financial accounting, ledger creation, daybook upkeep, payment &amp; receipt voucher entry, and basic trial balance management using computerized accounting software.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Certification</span>
+                                <button onclick="openEnquiryModal('Certificate in Finance Accounting')" class="px-3.5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 4. Diploma in Computer Application -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-blue transition group">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-full">Diploma</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #4</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-blue transition">
+                                    4. Diploma in Computer Application
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    Comprehensive computer diploma combining complete office automation, PC configuration, digital presentations, internet technologies, document publishing, and fundamental computer logic.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Diploma</span>
+                                <button onclick="openEnquiryModal('Diploma in Computer Application')" class="px-3.5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 5. Diploma in Finance Accounting -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-blue transition group">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">Diploma</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #5</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-blue transition">
+                                    5. Diploma in Finance Accounting
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    In-depth professional accounting curriculum with Tally Prime, GST invoice generation, input tax credit principles, TDS basics, inventory stock management, and balance sheet finalization.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Diploma</span>
+                                <button onclick="openEnquiryModal('Diploma in Finance Accounting')" class="px-3.5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 6. Diploma in Graphic Designing -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-red transition group">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-sgiit-red bg-red-50 px-2.5 py-1 rounded-full">Creative Diploma</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #6</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-red transition">
+                                    6. Diploma in Graphic Designing
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    Professional visual media diploma covering raster photo retouching in Adobe Photoshop, vector graphics in CorelDRAW and Illustrator, promotional flex/banner designs, and typography layouts.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Diploma</span>
+                                <button onclick="openEnquiryModal('Diploma in Graphic Designing')" class="px-3.5 py-2 bg-sgiit-red hover:bg-sgiit-red-dark text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 7. Diploma in Animation & VFX -->
+                        <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between shadow-subtle-card hover:border-sgiit-blue transition group sm:col-span-2 lg:col-span-1">
+                            <div>
+                                <div class="flex items-center justify-between gap-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">Media Diploma</span>
+                                    <span class="text-[10px] font-bold text-slate-400">Course #7</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 font-brand group-hover:text-sgiit-blue transition">
+                                    7. Diploma in Animation &amp; VFX
+                                </h3>
+                                <p class="text-slate-600 text-xs mt-2.5 leading-relaxed">
+                                    Creative video editing, timeline keyframing, dynamic visual effects, chroma keying, motion title generation, and video composition for advertising and digital broadcasts.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">SGIIT Diploma</span>
+                                <button onclick="openEnquiryModal('Diploma in Animation & VFX')" class="px-3.5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i> Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: GRAPHIC DESIGNING (Exact 7 tracks)      -->
+        <!-- ============================================== -->
+        <div id="view-graphic-designing" class="page-view hidden">
+            <section class="py-14 bg-white border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <span class="px-3 py-1 rounded-lg bg-red-50 text-sgiit-red text-xs font-bold uppercase tracking-wider">
+                            Creative Media Department
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 font-brand mt-2">
+                            Graphic Designing Disciplines
+                        </h1>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Modern software tools and practical studio sessions conducted at Keharwin Chowk, Hamirpur.
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                        
+                        <!-- 1. Graphic Design -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-red-100 text-sgiit-red flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-bezier-curve"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">Graphic Design</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    Brand logos, business cards, CorelDRAW vector art, Photoshop photo manipulation, and print production.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%20Graphic%20Design." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 2. 3D Design & Animation -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-blue-100 text-sgiit-blue flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-cube"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">3D Design &amp; Animation</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    Spatial modeling, 3D object rendering, scene composition, texturing, and foundational keyframe animation.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%203D%20Design%20and%20Animation." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 3. Motion Design -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">Motion Design</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    Kinetic typography, brand ident intros, lower thirds, visual transitions, and promotional motion clips.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%20Motion%20Design." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 4. UI/UX Design -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">UI/UX Design</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    Mobile app screen wireframes, web UI systems, user journey maps, visual hierarchies, and prototype interaction.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%20UI/UX%20Design." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 5. Video Editing -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-film"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">Video Editing</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    Multi-track video assembly, audio balancing, color grading, title creation, and YouTube/reel export formatting.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%20Video%20Editing." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 6. Website Design -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">Website Design</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    Responsive web page design, modern CSS styling, mobile-first grid structures, and web publishing principles.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%20Website%20Design." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 7. Game Asset Design -->
+                        <div class="p-6 rounded-3xl bg-slate-50/80 border border-slate-200 shadow-2xs hover:border-sgiit-red transition flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+                            <div>
+                                <div class="w-11 h-11 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center text-lg mb-4">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                </div>
+                                <h3 class="text-base font-bold text-slate-900 font-brand">Game Asset Design</h3>
+                                <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                                    2D game sprite sheets, game UI HUD elements, environment art, icons, and character concept sketches.
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-slate-200 grid grid-cols-2 gap-2">
+                                <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-solid fa-phone text-[10px]"></i> Call
+                                </a>
+                                <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20details%20for%20Game%20Asset%20Design." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: CSC SERVICES (Exact 11 items)           -->
+        <!-- ============================================== -->
+        <div id="view-csc-services" class="page-view hidden">
+            <section class="py-14 bg-slate-50 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <span class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider">
+                            Citizen Digital Support
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 font-brand mt-2">
+                            CSC Services
+                        </h1>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Direct, prompt online facilitation at our center in Keharwin Chowk, Hamirpur.
+                        </p>
+                    </div>
+
+                    <!-- Exact 11 Requested CSC Services Grid -->
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="cscGridContainer">
+                        <!-- Populated dynamically to ensure exact wording and crisp icons -->
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: CERTIFICATE VERIFICATION & ADMIN AREA    -->
+        <!-- ============================================== -->
+        <div id="view-verification" class="page-view hidden">
+            <section class="py-14 bg-white border-b border-slate-200">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <!-- Top control bar -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-200 mb-8">
+                        <div>
+                            <span class="px-3 py-1 rounded-lg bg-blue-50 text-sgiit-blue text-xs font-bold uppercase tracking-wider">
+                                Registry Verification
+                            </span>
+                            <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-brand mt-1">
+                                Certificate Verification
+                            </h1>
+                            <p class="text-slate-500 text-xs mt-0.5">
+                                Verify credentials issued by Shivashti Group of IIT
+                            </p>
+                        </div>
+                        <button onclick="toggleAdminView()" id="adminToggleBtn" class="self-start sm:self-auto px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition flex items-center gap-2 border border-slate-300">
+                            <i class="fa-solid fa-lock text-slate-500"></i> <span id="adminToggleText">Admin Area</span>
+                        </button>
+                    </div>
+
+                    <!-- PUBLIC LOOKUP FORM -->
+                    <div id="publicVerificationSection" class="space-y-6">
+                        <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-2xs">
+                            <form onsubmit="handlePublicVerify(event)" class="space-y-4">
+                                <div>
+                                    <label for="certNumberInput" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                                        Enter Certificate Number:
+                                    </label>
+                                    <div class="relative">
+                                        <input 
+                                            type="text" 
+                                            id="certNumberInput" 
+                                            required 
+                                            placeholder="e.g. SGIIT-2024-0101" 
+                                            class="w-full px-4 py-3.5 rounded-2xl border border-slate-300 font-mono uppercase text-sm focus:outline-none focus:ring-2 focus:ring-sgiit-blue bg-white shadow-2xs"
+                                        >
+                                        <button type="submit" class="absolute right-2 top-2 px-5 py-2 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition shadow-xs">
+                                            Verify Certificate
+                                        </button>
+                                    </div>
+                                    <p class="text-[11px] text-slate-500 mt-2">
+                                        *For test validation, try: 
+                                        <span class="font-mono text-sgiit-blue font-bold cursor-pointer hover:underline" onclick="fillTestCert('SGIIT-2024-0101')">SGIIT-2024-0101</span>, 
+                                        <span class="font-mono text-sgiit-blue font-bold cursor-pointer hover:underline" onclick="fillTestCert('SGIIT-2023-0045')">SGIIT-2023-0045</span>, or 
+                                        <span class="font-mono text-sgiit-blue font-bold cursor-pointer hover:underline" onclick="fillTestCert('SGIIT-2024-0102')">SGIIT-2024-0102</span>
+                                    </p>
+                                </div>
+                            </form>
+
+                            <!-- Verification Result Display -->
+                            <div id="verifyResultCard" class="mt-6 hidden">
+                                <!-- Populated dynamically by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Data Protection Notice -->
+                        <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 text-xs text-blue-950 flex items-start gap-3">
+                            <i class="fa-solid fa-shield-halved text-sgiit-blue text-base mt-0.5"></i>
+                            <div>
+                                <strong class="block font-bold">Privacy &amp; Security Standards:</strong>
+                                <span>In accordance with institutional guidelines and student privacy, only course completion status, certificate registration number, and issuance dates are publicly displayed. Confidential student contacts remain encrypted and unexposed.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ADMIN MANAGEMENT PORTAL (PROTECTED) -->
+                    <div id="adminPortalSection" class="hidden space-y-6">
+                        
+                        <!-- Login Screen if not authenticated -->
+                        <div id="adminLoginBox" class="max-w-md mx-auto bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-subtle-card">
+                            <div class="text-center mb-5">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-200 text-slate-700 flex items-center justify-center mx-auto mb-2 text-lg">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 font-brand">Institute Admin Login</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Access certificate records database</p>
+                            </div>
+                            <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Passcode</label>
+                                    <input type="password" id="adminPasswordInput" required placeholder="Default passcode: admin123" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                                </div>
+                                <button type="submit" class="w-full py-3 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition shadow-xs">
+                                    Sign In to Registry
+                                </button>
+                                <p id="loginErrorMsg" class="text-xs text-red-600 hidden text-center font-medium">Incorrect password. Please try again.</p>
+                            </form>
+                        </div>
+
+                        <!-- Active Admin Control Dashboard -->
+                        <div id="adminDashboardBox" class="hidden space-y-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-900 text-white p-5 rounded-2xl shadow-md">
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-wider text-amber-400 font-bold">Admin Portal Active</span>
+                                    <h3 class="text-base font-bold font-brand">Certificate Records Management</h3>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="openRecordModal()" class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs">
+                                        <i class="fa-solid fa-plus"></i> Add Certificate
+                                    </button>
+                                    <button onclick="logoutAdmin()" class="px-3.5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-bold transition">
+                                        Logout
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Search bar & stats -->
+                            <div class="flex flex-col sm:flex-row gap-3 items-center justify-between">
+                                <div class="relative w-full sm:w-80">
+                                    <input 
+                                        type="text" 
+                                        id="adminSearchInput" 
+                                        oninput="renderAdminTable()" 
+                                        placeholder="Search certificate, student or course..." 
+                                        class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white shadow-2xs"
+                                    >
+                                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-xs text-slate-400"></i>
+                                </div>
+                                <span class="text-xs text-slate-500 font-bold" id="recordCountText">Total records: 0</span>
+                            </div>
+
+                            <!-- Table of Certificates -->
+                            <div class="overflow-x-auto border border-slate-200 rounded-2xl bg-white shadow-2xs">
+                                <table class="w-full text-left text-xs">
+                                    <thead class="bg-slate-100 text-slate-700 uppercase tracking-wider text-[10px] border-b border-slate-200 font-bold">
+                                        <tr>
+                                            <th class="p-3.5">Cert No</th>
+                                            <th class="p-3.5">Student Name</th>
+                                            <th class="p-3.5">Course Name</th>
+                                            <th class="p-3.5">Issue Date</th>
+                                            <th class="p-3.5">Status</th>
+                                            <th class="p-3.5 text-right">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminTableBody" class="divide-y divide-slate-100 text-slate-700">
+                                        <!-- Rendered via JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: CONTACT US                              -->
+        <!-- ============================================== -->
+        <div id="view-contact" class="page-view hidden">
+            <section class="py-14 bg-slate-50 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <span class="px-3 py-1 rounded-lg bg-blue-50 text-sgiit-blue text-xs font-bold uppercase tracking-wider">
+                            Reach Out
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 font-brand mt-2">
+                            Contact Us
+                        </h1>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Keharwin Chowk, Distt Hamirpur, Himachal Pradesh, INDIA
+                        </p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                        
+                        <!-- Left Details Column -->
+                        <div class="lg:col-span-5 space-y-4">
+                            
+                            <!-- Location Box -->
+                            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-2xs">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-red-50 text-sgiit-red flex items-center justify-center text-lg shrink-0">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-base font-brand">Shivashti Group of IIT</h4>
+                                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                            Keharwin Chowk, Distt Hamirpur,<br>
+                                            Himachal Pradesh, INDIA
+                                        </p>
+                                        <span class="inline-block mt-2 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
+                                            ISO 9001:2015 &bull; MSME Regd.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone Numbers Box with Instant Buttons -->
+                            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-2xs">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-sgiit-blue flex items-center justify-center text-lg shrink-0">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-bold text-slate-900 text-base font-brand">Mobile Helplines</h4>
+                                        
+                                        <div class="mt-3 space-y-2 text-xs">
+                                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-100">
+                                                <span class="font-bold text-slate-800">+91 9888297705</span>
+                                                <a href="tel:9888297705" class="px-3 py-1 rounded-lg bg-sgiit-blue text-white text-[11px] font-bold hover:bg-sgiit-blue-deep transition">
+                                                    Call Now
+                                                </a>
+                                            </div>
+                                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-100">
+                                                <span class="font-bold text-slate-800">+91 9882222701</span>
+                                                <a href="tel:9882222701" class="px-3 py-1 rounded-lg bg-sgiit-blue text-white text-[11px] font-bold hover:bg-sgiit-blue-deep transition">
+                                                    Call Now
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3 pt-3 border-t border-slate-100">
+                                            <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20have%20an%20enquiry." target="_blank" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow-xs">
+                                                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us Instantly
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Box -->
+                            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-2xs">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-base font-brand">Official Email</h4>
+                                        <a href="mailto:sonu12004@gmail.com" class="text-xs text-sgiit-blue hover:underline font-bold block mt-1">
+                                            sonu12004@gmail.com
+                                        </a>
+                                        <span class="text-[11px] text-slate-500">Admissions, certificate inquiries &amp; feedback</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Google Map Placeholder -->
+                            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-2xs">
+                                <div class="flex items-center justify-between mb-2 px-1">
+                                    <span class="text-xs font-bold text-slate-800"><i class="fa-solid fa-map-location-dot text-sgiit-red mr-1"></i> Keharwin Chowk Hamirpur</span>
+                                    <span class="text-[10px] text-slate-400">Campus Location</span>
+                                </div>
+                                <div class="w-full h-44 rounded-2xl overflow-hidden border border-slate-200">
+                                    <iframe 
+                                        src="https://maps.google.com/maps?q=Keharwin%20Chowk,%20Hamirpur,%20Himachal%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                        class="w-full h-full border-0" 
+                                        loading="lazy" 
+                                        title="Keharwin Chowk Hamirpur Location">
+                                    </iframe>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Contact Form -->
+                        <div class="lg:col-span-7">
+                            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-slate-200 shadow-subtle-card">
+                                <h3 class="text-xl font-bold text-slate-900 font-brand">Send Us an Academic Inquiry</h3>
+                                <p class="text-xs text-slate-500 mt-1 mb-6">Leave your details and our team will get in touch directly.</p>
+
+                                <form onsubmit="handleContactForm(event)" class="space-y-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Full Name *</label>
+                                        <input type="text" id="cntName" required placeholder="Enter student or candidate name" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                                    </div>
+
+                                    <div class="grid sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Mobile Number *</label>
+                                            <input type="tel" id="cntPhone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Email Address</label>
+                                            <input type="email" id="cntEmail" placeholder="e.g. name@gmail.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Service / Course Interest *</label>
+                                        <select id="cntSubject" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                                            <option value="Course Admission">Course Admission (DCA / CCA / Tally / Basic)</option>
+                                            <option value="Graphic Designing Track">Graphic Designing &amp; VFX Track</option>
+                                            <option value="CSC Citizen Services">CSC Digital Citizen Assistance</option>
+                                            <option value="Certificate Verification">Certificate Verification Inquiry</option>
+                                            <option value="General Inquiry">General Query</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Message</label>
+                                        <textarea id="cntMessage" rows="4" placeholder="Type your inquiry details here..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="w-full py-3.5 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-extrabold shadow-glow-blue transition">
+                                        Submit Inquiry
+                                    </button>
+                                </form>
+
+                                <div id="contactSuccessNotice" class="mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs hidden flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+                                    <span>Thank you! Your message has been noted. Our Keharwin Chowk office will contact you.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Sleek Floating Action Buttons (Mobile + Desktop) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-none">
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20want%20to%20enquire%20about%20admissions." target="_blank" class="pointer-events-auto w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-xl transition transform hover:scale-110" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Floating Call Button -->
+        <a href="tel:9888297705" class="pointer-events-auto w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-sgiit-blue hover:bg-sgiit-blue-deep text-white flex items-center justify-center text-lg shadow-xl transition transform hover:scale-110" title="Call Institute">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Official Footer -->
+    <footer class="bg-sgiit-dark text-slate-400 text-xs pt-14 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-800/80">
+                
+                <!-- Col 1: Institute Profile & Logo -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="font-brand font-black text-xl text-white tracking-tight flex items-center">
+                            <span class="text-sgiit-red">SG</span><span class="text-blue-400 ml-0.5">IIT</span>
+                        </div>
+                        <span class="font-extrabold text-white text-xs tracking-wider">SHIVASHTI GROUP OF IIT</span>
+                    </div>
+                    <p class="text-slate-400 text-[11px] leading-relaxed">
+                        AN ISO 9001:2015 CERTIFIED INSTITUTE<br>
+                        Regd: Ministry of Micro, Small &amp; Medium Enterprises, Govt. of India.
+                    </p>
+                    <p class="text-slate-400 text-[11px]">
+                        Keharwin Chowk, Distt Hamirpur, Himachal Pradesh, INDIA
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="text-xs font-bold text-white mb-3 uppercase tracking-wider">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><button onclick="navigateTo('home')" class="hover:text-white transition">Home</button></li>
+                        <li><button onclick="navigateTo('about')" class="hover:text-white transition">About Us</button></li>
+                        <li><button onclick="navigateTo('courses')" class="hover:text-white transition">Courses (7 Programs)</button></li>
+                        <li><button onclick="navigateTo('graphic-designing')" class="hover:text-white transition">Graphic Designing</button></li>
+                        <li><button onclick="navigateTo('csc-services')" class="hover:text-white transition">CSC Services</button></li>
+                        <li><button onclick="navigateTo('verification')" class="hover:text-white transition">Certificate Verification</button></li>
+                        <li><button onclick="navigateTo('contact')" class="hover:text-white transition">Contact Us</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Helplines -->
+                <div>
+                    <h4 class="text-xs font-bold text-white mb-3 uppercase tracking-wider">Contact &amp; Helplines</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-sgiit-red"></i> 
+                            <a href="tel:9888297705" class="hover:text-white">9888297705</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-sgiit-red"></i> 
+                            <a href="tel:9882222701" class="hover:text-white">9882222701</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-sky-400"></i> 
+                            <a href="mailto:sonu12004@gmail.com" class="hover:text-white">sonu12004@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i> 
+                            <a href="https://wa.me/919888297705" target="_blank" class="hover:text-white">WhatsApp Chat Desk</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Center Hours & Location -->
+                <div>
+                    <h4 class="text-xs font-bold text-white mb-3 uppercase tracking-wider">Institute Hours</h4>
+                    <p class="text-xs text-slate-400">Monday &ndash; Saturday: 9:00 AM &ndash; 5:30 PM</p>
+                    <p class="text-xs text-slate-400 mt-1">Sunday: Closed</p>
+                    <div class="mt-4 pt-3 border-t border-slate-800">
+                        <span class="inline-block bg-blue-950 text-sky-300 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-blue-800/80">
+                            Authorized CSC Center Desk
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
+                <p>&copy; <span id="copyrightYear"></span> Shivashti Group of IIT (SGIIT). All Rights Reserved.</p>
+                <p>Keharwin Chowk, Distt Hamirpur, Himachal Pradesh, INDIA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: Course Enquiry Form -->
+    <div id="enquiryModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-200 relative animate-fade">
+            <button onclick="closeEnquiryModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="mb-4">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-sgiit-blue bg-blue-50 px-2.5 py-0.5 rounded-full">Admission Desk</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-1 font-brand" id="modalCourseTitle">Course Admission Enquiry</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Keharwin Chowk, Distt Hamirpur</p>
+            </div>
+
+            <form onsubmit="handleEnquirySubmit(event)" class="space-y-3">
+                <input type="hidden" id="modalSelectedCourse" value="">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Your Name *</label>
+                    <input type="text" id="modalStudentName" required placeholder="Enter student full name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Mobile / WhatsApp Number *</label>
+                    <input type="tel" id="modalStudentPhone" required placeholder="10-digit number" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Batch / Query Details</label>
+                    <textarea id="modalStudentQuery" rows="2" placeholder="e.g. Preferred timing or syllabus clarification..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white"></textarea>
+                </div>
+
+                <div class="pt-2 flex gap-2">
+                    <button type="submit" class="flex-1 py-3 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition">
+                        Submit Enquiry
+                    </button>
+                    <button type="button" onclick="sendDirectWhatsAppEnquiry()" class="px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                    </button>
+                </div>
+            </form>
+
+            <div id="modalSuccess" class="hidden mt-3 p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs text-center font-medium">
+                Thank you! Your enquiry has been received. Our team will contact you.
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Admin Add / Edit Certificate Record -->
+    <div id="adminRecordModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-slate-200 relative animate-fade">
+            <button onclick="closeRecordModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="mb-4">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-sgiit-red bg-red-50 px-2.5 py-0.5 rounded-full">Admin Record</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-1 font-brand" id="recordModalTitle">Add Certificate Record</h3>
+            </div>
+
+            <form onsubmit="handleSaveRecord(event)" class="space-y-3">
+                <input type="hidden" id="recEditId" value="">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Certificate Number *</label>
+                    <input type="text" id="recCertNo" required placeholder="e.g. SGIIT-2024-0104" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono uppercase focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Student Name *</label>
+                    <input type="text" id="recStudentName" required placeholder="Student Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Course Name *</label>
+                    <select id="recCourseName" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                        <option value="Certificate in Basic Computer Course">Certificate in Basic Computer Course</option>
+                        <option value="Certificate in Computer Application">Certificate in Computer Application</option>
+                        <option value="Certificate in Finance Accounting">Certificate in Finance Accounting</option>
+                        <option value="Diploma in Computer Application">Diploma in Computer Application</option>
+                        <option value="Diploma in Finance Accounting">Diploma in Finance Accounting</option>
+                        <option value="Diploma in Graphic Designing">Diploma in Graphic Designing</option>
+                        <option value="Diploma in Animation & VFX">Diploma in Animation & VFX</option>
+                        <option value="Specialized Graphic Designing Track">Specialized Graphic Designing Track</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Issue Date *</label>
+                        <input type="text" id="recIssueDate" required placeholder="e.g. 15 March 2024" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Status *</label>
+                        <select id="recStatus" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-sgiit-blue focus:outline-none bg-white">
+                            <option value="Verified & Genuine">Verified &amp; Genuine</option>
+                            <option value="Issued">Issued</option>
+                            <option value="Passed with Distinction">Passed with Distinction</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pt-3 flex gap-2">
+                    <button type="submit" class="flex-1 py-3 bg-sgiit-blue hover:bg-sgiit-blue-deep text-white rounded-xl text-xs font-bold transition">
+                        Save Certificate Record
+                    </button>
+                    <button type="button" onclick="closeRecordModal()" class="px-4 py-3 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-xs font-bold transition">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: Custom Logo Uploader (Provides option to upload custom LOGO NAME.png directly into header) -->
+    <div id="logoUploaderModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-200 relative animate-fade">
+            <button onclick="toggleLogoUploaderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="mb-4">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-sgiit-blue bg-blue-50 px-2.5 py-0.5 rounded-full">Branding Setup</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-1 font-brand">Attach / Manage Logo</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Choose to use the exact vector graphic or attach your PNG file.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+                    <p class="text-xs text-slate-600 mb-2">Upload your local image file (e.g. <code>LOGO NAME.png</code>):</p>
+                    <input type="file" id="localLogoFileInput" accept="image/*" onchange="handleLogoFileSelect(event)" class="text-xs text-slate-500 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-sgiit-blue file:text-white hover:file:bg-sgiit-blue-deep cursor-pointer">
+                </div>
+
+                <div class="flex items-center justify-between pt-2">
+                    <button onclick="resetToVectorLogo()" class="text-xs font-bold text-red-600 hover:underline">
+                        <i class="fa-solid fa-rotate-left mr-1"></i> Reset to Vector Logo
+                    </button>
+                    <button onclick="toggleLogoUploaderModal()" class="px-4 py-2 rounded-xl bg-slate-900 text-white font-bold text-xs">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT SECTION -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+        // ----------------------------------------------------
+        // EXACT CSC SERVICES LIST (11 Items)
+        // ----------------------------------------------------
+        const cscServicesData = [
+            { title: "PAN CARD", icon: "fa-id-card", desc: "New application, name/DOB correction & instant reprint assistance." },
+            { title: "PASSPORT", icon: "fa-passport", desc: "Online application submission, appointment slot booking & tracking." },
+            { title: "GRAPHIC DESIGNING", icon: "fa-bezier-curve", desc: "Pamphlets, visiting cards, flex banners & digital marketing design." },
+            { title: "DRIVING LICENCE", icon: "fa-id-badge", desc: "Learner's licence, appointment scheduling & renewal services." },
+            { title: "VEHICLE TAX-FITNESS", icon: "fa-truck-front", desc: "Himachal commercial & private vehicle road tax & fitness slots." },
+            { title: "VEHICLE INSURANCE", icon: "fa-car-burst", desc: "Instant two-wheeler & four-wheeler comprehensive policy renewals." },
+            { title: "FLIGHT & BUS TICKET", icon: "fa-plane-departure", desc: "HRTC bus tickets, private luxury travel & domestic flight booking." },
+            { title: "ALL TYPE OF DOCUMENT", icon: "fa-file-lines", desc: "Himachal Bonafide, caste, income certificates & affidavit printing." },
+            { title: "PVC I-CARD MAKING", icon: "fa-address-card", desc: "Waterproof, durable high-resolution PVC plastic card printing." },
+            { title: "ONLINE FORM FILLING", icon: "fa-laptop-file", desc: "HPSSC, HPBOSE, SSC, Banking, Police & Armed forces recruitments." },
+            { title: "PASSPORT SIZE PHOTO", icon: "fa-camera", desc: "Instant biometric standard high-clarity color passport photographs." }
+        ];
+
+        function renderCscServices() {
+            const container = document.getElementById('cscGridContainer');
+            if (!container) return;
+            container.innerHTML = cscServicesData.map(item => `
+                <div class="p-5 rounded-3xl bg-white border border-slate-200/90 shadow-2xs hover:border-emerald-500 hover:shadow-subtle-card transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
+                            <i class="fa-solid ${item.icon}"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm font-brand">${item.title}</h3>
+                        <p class="text-slate-500 text-xs mt-1.5 leading-relaxed">${item.desc}</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-100 grid grid-cols-2 gap-2">
+                        <a href="tel:9888297705" class="py-2 text-center rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-phone text-[10px]"></i> Call
+                        </a>
+                        <a href="https://wa.me/919888297705?text=Hello%20Shivashti%20Group%20of%20IIT,%20I%20need%20assistance%20with%20${encodeURIComponent(item.title)}." target="_blank" class="py-2 text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                            <i class="fa-brands fa-whatsapp text-xs"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+        renderCscServices();
+
+        // ----------------------------------------------------
+        // NAVIGATION (SPA Routing)
+        // ----------------------------------------------------
+        function navigateTo(viewId) {
+            const views = document.querySelectorAll('.page-view');
+            views.forEach(v => v.classList.add('hidden'));
+
+            const target = document.getElementById('view-' + viewId);
+            if (target) {
+                target.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Active nav styling
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('data-nav') === viewId) {
+                    link.classList.add('text-sgiit-blue', 'bg-slate-100', 'font-extrabold');
+                } else if (link.getAttribute('data-nav') !== 'verification') {
+                    link.classList.remove('text-sgiit-blue', 'bg-slate-100', 'font-extrabold');
+                }
+            });
+
+            closeMobileMenu();
+        }
+
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const menuToggleIcon = document.getElementById('menuToggleIcon');
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                const isOpen = !mobileDrawer.classList.contains('hidden');
+                if (isOpen) {
+                    closeMobileMenu();
+                } else {
+                    mobileDrawer.classList.remove('hidden');
+                    menuToggleIcon.classList.replace('fa-bars', 'fa-xmark');
+                }
+            });
+        }
+
+        function closeMobileMenu() {
+            if (mobileDrawer) mobileDrawer.classList.add('hidden');
+            if (menuToggleIcon) menuToggleIcon.classList.replace('fa-xmark', 'fa-bars');
+        }
+
+        // ----------------------------------------------------
+        // LOGO ATTACHMENT & LOCAL CACHING
+        // ----------------------------------------------------
+        function toggleLogoUploaderModal() {
+            const modal = document.getElementById('logoUploaderModal');
+            modal.classList.toggle('hidden');
+        }
+
+        function handleLogoFileSelect(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                const base64Data = evt.target.result;
+                localStorage.setItem('sgiit_custom_logo', base64Data);
+                applyCustomLogo(base64Data);
+                toggleLogoUploaderModal();
+            }
+            reader.readAsDataURL(file);
+        }
+
+        function applyCustomLogo(imgSrc) {
+            const logoContainer = document.getElementById('logoContainer');
+            if (logoContainer && imgSrc) {
+                logoContainer.innerHTML = `
+                    <div class="flex items-center gap-2">
+                        <img src="${imgSrc}" alt="Shivashti Group of IIT" class="h-16 sm:h-20 max-w-[280px] object-contain">
+                    </div>
+                `;
+            }
+        }
+
+        function resetToVectorLogo() {
+            localStorage.removeItem('sgiit_custom_logo');
+            location.reload();
+        }
+
+        // Check if custom logo exists in storage
+        const storedLogo = localStorage.getItem('sgiit_custom_logo');
+        if (storedLogo) {
+            applyCustomLogo(storedLogo);
+        }
+
+        // ----------------------------------------------------
+        // CERTIFICATE VERIFICATION SYSTEM & ADMIN AREA
+        // ----------------------------------------------------
+        const DEFAULT_CERTIFICATES = [
+            {
+                certNo: "SGIIT-2024-0101",
+                studentName: "Rahul Verma",
+                courseName: "Diploma in Computer Application",
+                issueDate: "10 January 2024",
+                status: "Verified & Genuine"
+            },
+            {
+                certNo: "SGIIT-2023-0045",
+                studentName: "Pooja Sharma",
+                courseName: "Diploma in Finance Accounting",
+                issueDate: "20 December 2023",
+                status: "Verified & Genuine"
+            },
+            {
+                certNo: "SGIIT-2024-0102",
+                studentName: "Amit Kumar",
+                courseName: "Diploma in Graphic Designing",
+                issueDate: "14 May 2024",
+                status: "Verified & Genuine"
+            }
+        ];
+
+        function getCertificates() {
+            const saved = localStorage.getItem('sgiit_certificates_db');
+            if (!saved) {
+                localStorage.setItem('sgiit_certificates_db', JSON.stringify(DEFAULT_CERTIFICATES));
+                return DEFAULT_CERTIFICATES;
+            }
+            try {
+                return JSON.parse(saved);
+            } catch (e) {
+                return DEFAULT_CERTIFICATES;
+            }
+        }
+
+        function saveCertificates(list) {
+            localStorage.setItem('sgiit_certificates_db', JSON.stringify(list));
+        }
+
+        function fillTestCert(num) {
+            document.getElementById('certNumberInput').value = num;
+            handlePublicVerify(new Event('submit'));
+        }
+
+        function handlePublicVerify(e) {
+            if (e && e.preventDefault) e.preventDefault();
+            const inputVal = document.getElementById('certNumberInput').value.trim().toUpperCase();
+            const resultCard = document.getElementById('verifyResultCard');
+            if (!inputVal) return;
+
+            const certs = getCertificates();
+            const found = certs.find(c => c.certNo.toUpperCase() === inputVal);
+
+            resultCard.classList.remove('hidden');
+
+            if (found) {
+                resultCard.innerHTML = `
+                    <div class="bg-white border-2 border-emerald-500 rounded-3xl p-6 sm:p-7 shadow-md transition">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-100 text-emerald-800">
+                                <i class="fa-solid fa-circle-check text-emerald-600"></i> Authentic Verified Certificate
+                            </span>
+                            <span class="font-mono text-xs font-bold text-slate-500">${found.certNo}</span>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-5 pt-4 text-xs">
+                            <div>
+                                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">Certificate Number</span>
+                                <span class="font-mono font-bold text-slate-800 text-sm">${found.certNo}</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">Student Name</span>
+                                <span class="font-bold text-slate-900 text-sm">${found.studentName}</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">Course Name</span>
+                                <span class="font-bold text-sgiit-blue text-sm">${found.courseName}</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">Issue Date</span>
+                                <span class="font-bold text-slate-800 text-sm">${found.issueDate}</span>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">Status</span>
+                                <span class="font-extrabold text-emerald-700 text-sm inline-flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shield-check"></i> ${found.status}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-4 border-t border-slate-100 text-[10px] text-slate-400 flex flex-col sm:flex-row justify-between items-center gap-2">
+                            <span>Shivashti Group of IIT &bull; Keharwin Chowk, Hamirpur (H.P.)</span>
+                            <span>AN ISO 9001:2015 CERTIFIED INSTITUTE</span>
+                        </div>
+                    </div>
+                `;
+            } else {
+                resultCard.innerHTML = `
+                    <div class="bg-red-50 border border-red-200 rounded-2xl p-5 text-xs text-red-800">
+                        <div class="font-bold flex items-center gap-2 mb-1 text-red-700">
+                            <i class="fa-solid fa-triangle-exclamation text-base"></i> Certificate not found. Please check the certificate number.
+                        </div>
+                        <p class="text-slate-600 mt-1">Please verify the certificate code printed on the official diploma. If your certificate was issued recently, please contact our administrative desk at <strong>9888297705</strong> or email <strong>sonu12004@gmail.com</strong>.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // ADMIN PANEL
+        let isAdminLoggedIn = false;
+
+        function toggleAdminView() {
+            const publicSec = document.getElementById('publicVerificationSection');
+            const adminSec = document.getElementById('adminPortalSection');
+            const toggleText = document.getElementById('adminToggleText');
+
+            if (adminSec.classList.contains('hidden')) {
+                publicSec.classList.add('hidden');
+                adminSec.classList.remove('hidden');
+                toggleText.textContent = "Back to Public Verification";
+                checkAdminAuthUI();
+            } else {
+                adminSec.classList.add('hidden');
+                publicSec.classList.remove('hidden');
+                toggleText.textContent = "Admin Area";
+            }
+        }
+
+        function checkAdminAuthUI() {
+            const loginBox = document.getElementById('adminLoginBox');
+            const dashboardBox = document.getElementById('adminDashboardBox');
+
+            if (isAdminLoggedIn) {
+                loginBox.classList.add('hidden');
+                dashboardBox.classList.remove('hidden');
+                renderAdminTable();
+            } else {
+                loginBox.classList.remove('hidden');
+                dashboardBox.classList.add('hidden');
+            }
+        }
+
+        function handleAdminLogin(e) {
+            e.preventDefault();
+            const pass = document.getElementById('adminPasswordInput').value;
+            const err = document.getElementById('loginErrorMsg');
+
+            if (pass === 'admin123') {
+                isAdminLoggedIn = true;
+                err.classList.add('hidden');
+                checkAdminAuthUI();
+            } else {
+                err.classList.remove('hidden');
+            }
+        }
+
+        function logoutAdmin() {
+            isAdminLoggedIn = false;
+            document.getElementById('adminPasswordInput').value = '';
+            checkAdminAuthUI();
+        }
+
+        function renderAdminTable() {
+            const tbody = document.getElementById('adminTableBody');
+            const query = (document.getElementById('adminSearchInput').value || '').toLowerCase().trim();
+            const certs = getCertificates();
+
+            const filtered = certs.filter(c => 
+                c.certNo.toLowerCase().includes(query) ||
+                c.studentName.toLowerCase().includes(query) ||
+                c.courseName.toLowerCase().includes(query)
+            );
+
+            document.getElementById('recordCountText').textContent = `Total records: ${filtered.length}`;
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" class="text-center p-5 text-slate-400 text-xs">No matching certificates found.</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map(c => `
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono font-bold text-slate-900">${c.certNo}</td>
+                    <td class="p-3.5 font-bold text-slate-800">${c.studentName}</td>
+                    <td class="p-3.5 text-slate-600">${c.courseName}</td>
+                    <td class="p-3.5 text-slate-500">${c.issueDate}</td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[10px]">${c.status}</span></td>
+                    <td class="p-3.5 text-right space-x-2">
+                        <button onclick="editRecord('${c.certNo}')" class="text-blue-600 hover:text-blue-800 font-bold">Edit</button>
+                        <button onclick="deleteRecord('${c.certNo}')" class="text-red-600 hover:text-red-800 font-bold">Delete</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function openRecordModal(editCertNo = null) {
+            const modal = document.getElementById('adminRecordModal');
+            const title = document.getElementById('recordModalTitle');
+            const editId = document.getElementById('recEditId');
+
+            if (editCertNo) {
+                const certs = getCertificates();
+                const record = certs.find(c => c.certNo === editCertNo);
+                if (!record) return;
+
+                title.textContent = "Edit Certificate Record";
+                editId.value = record.certNo;
+                document.getElementById('recCertNo').value = record.certNo;
+                document.getElementById('recStudentName').value = record.studentName;
+                document.getElementById('recCourseName').value = record.courseName;
+                document.getElementById('recIssueDate').value = record.issueDate;
+                document.getElementById('recStatus').value = record.status;
+            } else {
+                title.textContent = "Add New Certificate Record";
+                editId.value = "";
+                document.getElementById('recCertNo').value = "";
+                document.getElementById('recStudentName').value = "";
+                document.getElementById('recIssueDate').value = "";
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeRecordModal() {
+            document.getElementById('adminRecordModal').classList.add('hidden');
+        }
+
+        function handleSaveRecord(e) {
+            e.preventDefault();
+            const editId = document.getElementById('recEditId').value;
+            const certNo = document.getElementById('recCertNo').value.trim().toUpperCase();
+            const studentName = document.getElementById('recStudentName').value.trim();
+            const courseName = document.getElementById('recCourseName').value;
+            const issueDate = document.getElementById('recIssueDate').value.trim();
+            const status = document.getElementById('recStatus').value;
+
+            let certs = getCertificates();
+
+            if (editId) {
+                certs = certs.map(c => c.certNo === editId ? { certNo, studentName, courseName, issueDate, status } : c);
+            } else {
+                certs.unshift({ certNo, studentName, courseName, issueDate, status });
+            }
+
+            saveCertificates(certs);
+            closeRecordModal();
+            renderAdminTable();
+        }
+
+        function editRecord(certNo) {
+            openRecordModal(certNo);
+        }
+
+        function deleteRecord(certNo) {
+            let certs = getCertificates();
+            certs = certs.filter(c => c.certNo !== certNo);
+            saveCertificates(certs);
+            renderAdminTable();
+        }
+
+        // ----------------------------------------------------
+        // MODALS & CONTACT FORM
+        // ----------------------------------------------------
+        function openEnquiryModal(courseName) {
+            document.getElementById('modalSelectedCourse').value = courseName;
+            document.getElementById('modalCourseTitle').textContent = courseName ? courseName : 'Admission & Course Enquiry';
+            document.getElementById('modalSuccess').classList.add('hidden');
+            document.getElementById('enquiryModal').classList.remove('hidden');
+        }
+
+        function closeEnquiryModal() {
+            document.getElementById('enquiryModal').classList.add('hidden');
+        }
+
+        function handleEnquirySubmit(e) {
+            e.preventDefault();
+            const success = document.getElementById('modalSuccess');
+            success.classList.remove('hidden');
+            setTimeout(() => {
+                closeEnquiryModal();
+                e.target.reset();
+            }, 1800);
+        }
+
+        function sendDirectWhatsAppEnquiry() {
+            const course = document.getElementById('modalSelectedCourse').value || 'Course Admission';
+            const name = document.getElementById('modalStudentName').value || 'Student';
+            const text = encodeURIComponent(`Hello Shivashti Group of IIT (Keharwin Chowk), I am ${name}. I want to enquire regarding "${course}". Please share admission details.`);
+            window.open(`https://wa.me/919888297705?text=${text}`, '_blank');
+        }
+
+        function handleContactForm(e) {
+            e.preventDefault();
+            const success = document.getElementById('contactSuccessNotice');
+            success.classList.remove('hidden');
+            setTimeout(() => {
+                e.target.reset();
+            }, 600);
+            setTimeout(() => {
+                success.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
