@@ -144,8 +144,11 @@
                     <button onclick="navigateTo('courses')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="courses">
                         <i class="fa-solid fa-graduation-cap text-slate-400 text-[11px]"></i> Courses
                     </button>
-                    <button onclick="navigateTo('graphic-designing')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="graphic-designing">
+                                        <button onclick="navigateTo('graphic-designing')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="graphic-designing">
                         <i class="fa-solid fa-bezier-curve text-slate-400 text-[11px]"></i> Graphic Designing
+                    </button>
+                    <button onclick="navigateTo('design-samples')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="design-samples">
+                        <i class="fa-solid fa-images text-slate-400 text-[11px]"></i> Design Samples
                     </button>
                     <button onclick="navigateTo('csc-services')" class="nav-link px-3.5 py-2 rounded-xl text-slate-700 hover:text-sgiit-blue font-bold transition flex items-center gap-1.5" data-nav="csc-services">
                         <i class="fa-solid fa-id-card text-slate-400 text-[11px]"></i> CSC Services
@@ -192,8 +195,12 @@
                     <span class="flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-slate-400 text-xs w-5"></i> Courses (7 Programs)</span>
                     <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
                 </button>
-                <button onclick="navigateTo('graphic-designing')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                                <button onclick="navigateTo('graphic-designing')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
                     <span class="flex items-center gap-2"><i class="fa-solid fa-bezier-curve text-slate-400 text-xs w-5"></i> Graphic Designing Track</span>
+                    <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+                </button>
+                <button onclick="navigateTo('design-samples')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-images text-slate-400 text-xs w-5"></i> Design Samples (Portfolio)</span>
                     <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
                 </button>
                 <button onclick="navigateTo('csc-services')" class="w-full text-left py-2.5 px-3.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
@@ -309,7 +316,6 @@
                                     <!-- Exact Logo Display Box -->
                                     <div class="bg-gradient-to-b from-slate-50 to-white rounded-2xl p-4 border border-slate-200/80 shadow-inner flex flex-col items-center text-center">
                                         <img src="assets/computer-screen.svg" alt="Illustration of a computer screen showing a dashboard and code" width="640" height="480" class="w-full h-auto rounded-xl border border-slate-100">
-                                       
                                     </div>
 
                                     <div class="mt-5 space-y-2 text-center text-xs">
@@ -395,6 +401,64 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            
+            
+            <!-- Section: Creative Portfolio & Work Showcase on Home Page (Auto-Rotating) -->
+            <section class="py-16 bg-white border-b border-slate-200 overflow-hidden relative">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-red-50 text-sgiit-red text-xs font-bold uppercase tracking-wider mb-2">
+                                <span class="w-2 h-2 rounded-full bg-sgiit-red animate-ping"></span>
+                                Creative Portfolio &amp; Work
+                            </div>
+                            <h2 class="text-3xl font-extrabold text-slate-900 font-brand">
+                                Professional Designing Showcase
+                            </h2>
+                            <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                                SGIIT Studio dwara banaye gaye real 3D packaging, product labels, flex banners aur brand identities.
+                            </p>
+                        </div>
+
+                        <!-- Controls & View All Button -->
+                        <div class="flex items-center gap-3 self-start md:self-auto">
+                            <!-- Prev / Next Navigation Arrows -->
+                            <div class="flex items-center gap-1.5 bg-slate-100 p-1 rounded-2xl border border-slate-200">
+                                <button onclick="prevHomeSlide()" title="Previous Samples" class="w-8 h-8 rounded-xl bg-white text-slate-700 hover:bg-sgiit-blue hover:text-white transition flex items-center justify-center text-xs shadow-2xs">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button onclick="nextHomeSlide()" title="Next Samples" class="w-8 h-8 rounded-xl bg-white text-slate-700 hover:bg-sgiit-blue hover:text-white transition flex items-center justify-center text-xs shadow-2xs">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <button onclick="navigateTo('design-samples')" class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition inline-flex items-center gap-2 shadow-xs">
+                                <span>View All 19 Designs</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Auto-Rotating Dynamic Grid Container -->
+                    <div id="homeShowcaseGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">
+                        <!-- Populated and smoothly rotated via JavaScript -->
+                    </div>
+
+                    <!-- Pagination Indicator Dots & Live Status -->
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-8 pt-4 border-t border-slate-100 text-xs text-slate-500">
+                        <div class="flex items-center gap-2">
+                            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span id="homeShowcaseStatusText" class="font-semibold text-slate-600">Showing Designs 1 - 4 of 19</span>
+                        </div>
+                        <div class="flex items-center gap-1.5" id="homeShowcaseDots">
+                            <!-- Dots generated via JS -->
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -954,6 +1018,516 @@
             </section>
         </div>
 
+        
+        <!-- ============================================== -->
+        <!-- VIEW: DESIGNING SAMPLES & PORTFOLIO           -->
+        <!-- ============================================== -->
+        <div id="view-design-samples" class="page-view hidden">
+            <section class="py-14 bg-slate-50 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-10">
+                        <span class="px-3 py-1 rounded-lg bg-red-50 text-sgiit-red text-xs font-bold uppercase tracking-wider">
+                            Creative Portfolio &amp; Work
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 font-brand mt-2">
+                            Designing Samples &amp; Showcase
+                        </h1>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                            Hamare institute dwara banaye gaye flex boards, banners, visiting cards, social media ads aur commercial designs.
+                        </p>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex flex-wrap justify-center gap-2 mb-10 text-xs">
+                        <button onclick="filterSamples('all')" class="sample-filter-btn px-4 py-2 rounded-xl bg-sgiit-blue text-white font-bold transition shadow-xs" data-filter="all">All Designs (19)</button>
+                        <button onclick="filterSamples('packaging')" class="sample-filter-btn px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-100 transition shadow-2xs" data-filter="packaging">3D Packaging &amp; Mockups</button>
+                        <button onclick="filterSamples('banner')" class="sample-filter-btn px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-100 transition shadow-2xs" data-filter="banner">Posters &amp; Commercial Ads</button>
+                        <button onclick="filterSamples('branding')" class="sample-filter-btn px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-100 transition shadow-2xs" data-filter="branding">Logos &amp; Business Cards</button>
+                    </div>
+
+                    <!-- Samples Grid (Easily customizable with real image paths) -->
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="samplesGrid">
+
+                        <!-- Sample Card: Colab Falanghina Wine Bottle -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_rumilyzer.jpg', 'Colab Falanghina Wine Bottle')">
+                                <img src="assets/samples/sample_rumilyzer.jpg" alt="Colab Falanghina Wine Bottle" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-purple-700 bg-purple-50">3D Wine Mockup</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Colab Falanghina Wine Bottle</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Intricate folk-art illustrated wine bottle label and realistic 3D mockup designed by Sanjeev Sharma.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Colab Falanghina Wine Bottle'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Union Road Shiraz Wine Bottle -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_taxial_logo.jpg', 'Union Road Shiraz Wine Bottle')">
+                                <img src="assets/samples/sample_taxial_logo.jpg" alt="Union Road Shiraz Wine Bottle" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-purple-700 bg-purple-50">Wine Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Union Road Shiraz Wine Bottle</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Minimalist luxury wine bottle with gold-foiled monogram and organic topographical contour art.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Union Road Shiraz Wine Bottle'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Medcosa Pain Relief Lidocaine 3D Box -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_medcosa_pain_relief.jpg', 'Medcosa Pain Relief Lidocaine 3D Box')">
+                                <img src="assets/samples/sample_medcosa_pain_relief.jpg" alt="Medcosa Pain Relief Lidocaine 3D Box" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-yellow-700 bg-yellow-50">Pharma Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Medcosa Pain Relief Lidocaine 3D Box</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Bold Swiss typography pharmaceutical numbing cream packaging carton 3D mockup.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Medcosa Pain Relief Lidocaine 3D Box'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Medcosa Sterile Lubricating Jelly Box -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_medcosa_jelly.jpg', 'Medcosa Sterile Lubricating Jelly Box')">
+                                <img src="assets/samples/sample_medcosa_jelly.jpg" alt="Medcosa Sterile Lubricating Jelly Box" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-cyan-700 bg-cyan-50">Pharma Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Medcosa Sterile Lubricating Jelly Box</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Medical grade sterile lubricating jelly carton box 3D isometric mockup.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Medcosa Sterile Lubricating Jelly Box'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Aloevera Herbal Shampoo Label -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_aloevera_shampoo.jpg', 'Aloevera Herbal Shampoo Label')">
+                                <img src="assets/samples/sample_aloevera_shampoo.jpg" alt="Aloevera Herbal Shampoo Label" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-emerald-700 bg-emerald-50">Cosmetic Label</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Aloevera Herbal Shampoo Label</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">200ml herbal cosmetic shampoo packaging label layout with botanical ingredients and MRP details.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Aloevera Herbal Shampoo Label'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Glow Pet Veterinary Herbal Shampoo -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_glow_pet_shampoo.jpg', 'Glow Pet Veterinary Herbal Shampoo')">
+                                <img src="assets/samples/sample_glow_pet_shampoo.jpg" alt="Glow Pet Veterinary Herbal Shampoo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-blue-700 bg-blue-50">Veterinary Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Glow Pet Veterinary Herbal Shampoo</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Atlantiz Pet Pharma dog conditioning shampoo label layout featuring custom Dalmatian artwork.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Glow Pet Veterinary Herbal Shampoo'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: iSSeey Hand Sanitizer Gel Bottles -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_car_cleaner.jpg', 'iSSeey Hand Sanitizer Gel Bottles')">
+                                <img src="assets/samples/sample_car_cleaner.jpg" alt="iSSeey Hand Sanitizer Gel Bottles" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-emerald-700 bg-emerald-50">Bottle Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">iSSeey Hand Sanitizer Gel Bottles</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Dual variant Aloe Vera and Lemon hand sanitizer spray bottle labels with realistic bottle render.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'iSSeey Hand Sanitizer Gel Bottles'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: CBD Body Lotion Pump Bottle Mockup -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_magnetic_eyelash.jpg', 'CBD Body Lotion Pump Bottle Mockup')">
+                                <img src="assets/samples/sample_magnetic_eyelash.jpg" alt="CBD Body Lotion Pump Bottle Mockup" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-emerald-700 bg-emerald-50">Cosmetic Mockup</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">CBD Body Lotion Pump Bottle Mockup</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Dark cosmetic pump bottle label and realistic 3D bottle mockup with Kiwi Mint aroma branding.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'CBD Body Lotion Pump Bottle Mockup'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Hafny Handlebar Bike Mirror Card -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_hafny_bike_mirror.jpg', 'Hafny Handlebar Bike Mirror Card')">
+                                <img src="assets/samples/sample_hafny_bike_mirror.jpg" alt="Hafny Handlebar Bike Mirror Card" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-rose-700 bg-rose-50">Retail Blister Pack</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Hafny Handlebar Bike Mirror Card</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Cycle handlebar mirror retail hanging blister card packaging layout with technical diagrams.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Hafny Handlebar Bike Mirror Card'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Positive Beverage 12-Can Master Carton -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_positive_beverage.jpg', 'Positive Beverage 12-Can Master Carton')">
+                                <img src="assets/samples/sample_positive_beverage.jpg" alt="Positive Beverage 12-Can Master Carton" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-cyan-700 bg-cyan-50">Carton Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Positive Beverage 12-Can Master Carton</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Commercial 12-pack sparkling fruit beverage master carton packaging box design with flavor icons.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Positive Beverage 12-Can Master Carton'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+<!-- Sample Card: Alpha Paw Neutral Dog Food Bag -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_bog.jpg', 'Alpha Paw Neutral Dog Food Bag')">
+                                <img src="assets/samples/sample_bog.jpg" alt="Alpha Paw Neutral Dog Food Bag" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-amber-700 bg-amber-50">3D Packaging</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Alpha Paw Neutral Dog Food Bag</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Premium pet food bag 3D pouch packaging design featuring bold typography and bulldog visual mockup.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Alpha%20Paw%20Neutral%20Dog%20Food%20Bag'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Sample Card: Eveasy Sanitary Napkin 3D Display Boxes -->
+                        <div class="sample-item packaging bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_eveasy_boxes.jpg', 'Eveasy Sanitary Napkin 3D Display Boxes')">
+                                <img src="assets/samples/sample_eveasy_boxes.jpg" alt="Eveasy Sanitary Napkin 3D Display Boxes" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-rose-700 bg-rose-50">3D Box Display</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Eveasy Sanitary Napkin 3D Display Boxes</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Vibrant feminine hygiene product packaging box design showcased in 3D perspective display.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Eveasy Sanitary Napkin 3D Display Boxes'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: 2020 Vision Auto Glass Cleaner Ad -->
+                        <div class="sample-item banner bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_wine_bottle.jpg', '2020 Vision Auto Glass Cleaner Ad')">
+                                <img src="assets/samples/sample_wine_bottle.jpg" alt="2020 Vision Auto Glass Cleaner Ad" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-lime-700 bg-lime-50">Commercial Ad</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">2020 Vision Auto Glass Cleaner Ad</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Dynamic automotive detailing product advertisement poster featuring sleek sports car visual.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'2020 Vision Auto Glass Cleaner Ad'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Detail Depot Automotive Detailer Poster -->
+                        <div class="sample-item banner bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_cbd_lotion.jpg', 'Detail Depot Automotive Detailer Poster')">
+                                <img src="assets/samples/sample_cbd_lotion.jpg" alt="Detail Depot Automotive Detailer Poster" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-sky-700 bg-sky-50">Product Poster</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Luxaderme 3 Step Sheet Mask Pouch</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Luxurious 3-step skincare pouch packaging featuring cleansing scrub, booster crème, and bio cellulose sheet mask layout with botanical leaf illustrations.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Detail Depot Automotive Detailer Poster'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Ahmed Punjabi Restaurant Menu Card -->
+                        <div class="sample-item banner bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_ahmed_menu.jpg', 'Ahmed Punjabi Restaurant Menu Card')">
+                                <img src="assets/samples/sample_ahmed_menu.jpg" alt="Ahmed Punjabi Restaurant Menu Card" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-amber-700 bg-amber-50">Restaurant Menu</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Ahmed Punjabi Restaurant Menu Card</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Vibrant full-spread restaurant menu layout with authentic street food, combos, and curries.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Ahmed Punjabi Restaurant Menu Card'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Sydney Theatre School Event Poster -->
+                        <div class="sample-item banner bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_stendhal_poster.jpg', 'Sydney Theatre School Event Poster')">
+                                <img src="assets/samples/sample_stendhal_poster.jpg" alt="Sydney Theatre School Event Poster" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-purple-700 bg-purple-50">Theater Poster</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Sydney Theatre School Event Poster</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">High-concept sci-fi theater event poster with deep space celestial nebula and planet artwork.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Sydney Theatre School Event Poster'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Adilnavs Pharmaceuticals Corporate Logo -->
+                        <div class="sample-item branding bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_adilnavs_pharma.jpg', 'Adilnavs Pharmaceuticals Corporate Logo')">
+                                <img src="assets/samples/sample_adilnavs_pharma.jpg" alt="Adilnavs Pharmaceuticals Corporate Logo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-red-700 bg-red-50">Logo Branding</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Adilnavs Pharmaceuticals Corporate Logo</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Modern corporate pharmaceutical brand mark with dynamic geometric checkmark chevron symbol.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Adilnavs Pharmaceuticals Corporate Logo'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: TAI Big Rock Ranch Oregon Brand Logo -->
+                        <div class="sample-item branding bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_tai_ranch_logo.jpg', 'TAI Big Rock Ranch Oregon Brand Logo')">
+                                <img src="assets/samples/sample_tai_ranch_logo.jpg" alt="TAI Big Rock Ranch Oregon Brand Logo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-slate-800 bg-slate-100">Logo Branding</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">TAI Big Rock Ranch Oregon Brand Logo</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Minimalist geometric ranch monogram logo with stylized animal motif on textured canvas.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'TAI Big Rock Ranch Oregon Brand Logo'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Taxial Architectural Housing Logo -->
+                        <div class="sample-item branding bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_visiting_card.jpg', 'Taxial Architectural Housing Logo')">
+                                <img src="assets/samples/sample_visiting_card.jpg" alt="Taxial Architectural Housing Logo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-slate-800 bg-slate-100">Logo Branding</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Taxial Architectural Housing Logo</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Geometric architectural housing logo embossed on premium textured luxury paper stock.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Taxial Architectural Housing Logo'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sample Card: Zumpolle B.V. Corporate Brand Logo -->
+                        <div class="sample-item branding bg-white rounded-3xl border border-slate-200 shadow-subtle-card overflow-hidden hover:border-sgiit-red transition group flex flex-col justify-between">
+                            <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/sample_teatment.jpg', 'Zumpolle B.V. Corporate Brand Logo')">
+                                <img src="assets/samples/sample_teatment.jpg" alt="Zumpolle B.V. Corporate Brand Logo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                                </div>
+                            </div>
+                            <div class="p-5 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md text-red-700 bg-red-50">Logo Branding</span>
+                                    <h4 class="text-sm font-bold text-slate-900 mt-2">Zumpolle B.V. Corporate Brand Logo</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Distinctive red and charcoal circular corporate embossed logo mark on textured paper.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 font-semibold">Custom Work</span>
+                                    <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20sample%20'Zumpolle B.V. Corporate Brand Logo'%20on%20SGIIT%20website%20and%20want%20to%20order%20similar%20work." target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold transition flex items-center gap-1">
+                                        <i class="fa-brands fa-whatsapp text-xs"></i> Order Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Callout Box -->
+                    <div class="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 text-center max-w-3xl mx-auto shadow-2xs">
+                        <div class="w-12 h-12 rounded-2xl bg-red-50 text-sgiit-red flex items-center justify-center text-xl mx-auto mb-3">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 font-brand">Need a Custom Design for Your Business or Event?</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-xl mx-auto">
+                            Hamirpur aur nearby areas ke liye flex banners, shop boards, visiting cards, pamphlets aur political posters fast delivery ke sath banaye jaate hain.
+                        </p>
+                        <div class="mt-4 flex flex-wrap justify-center gap-3">
+                            <a href="tel:9888297705" class="px-5 py-2.5 rounded-xl bg-sgiit-blue text-white text-xs font-bold hover:bg-sgiit-blue-deep transition flex items-center gap-1.5">
+                                <i class="fa-solid fa-phone"></i> Call 9888297705
+                            </a>
+                            <a href="https://wa.me/919888297705?text=Hello%20SGIIT,%20I%20have%20a%20graphic%20design%20requirement." target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center gap-1.5">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp Requirements
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- LIGHTBOX MODAL FOR SAMPLES -->
+        <div id="sampleLightboxModal" class="fixed inset-0 z-50 hidden bg-slate-900/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+            <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+                <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white hover:text-slate-300 text-xl font-bold p-1">
+                    <i class="fa-solid fa-xmark"></i> Close
+                </button>
+                <img id="lightboxImage" src="" alt="Sample Preview" class="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl border border-white/20">
+                <p id="lightboxTitle" class="text-white text-sm font-bold mt-3 text-center"></p>
+            </div>
+        </div>
+
         <!-- ============================================== -->
         <!-- VIEW: CSC SERVICES (Exact 11 items)           -->
         <!-- ============================================== -->
@@ -1344,6 +1918,7 @@
                         <li><button onclick="navigateTo('about')" class="hover:text-white transition">About Us</button></li>
                         <li><button onclick="navigateTo('courses')" class="hover:text-white transition">Courses (7 Programs)</button></li>
                         <li><button onclick="navigateTo('graphic-designing')" class="hover:text-white transition">Graphic Designing</button></li>
+                        <li><button onclick="navigateTo('design-samples')" class="hover:text-white transition">Design Samples</button></li>
                         <li><button onclick="navigateTo('csc-services')" class="hover:text-white transition">CSC Services</button></li>
                         <li><button onclick="navigateTo('verification')" class="hover:text-white transition">Certificate Verification</button></li>
                         <li><button onclick="navigateTo('contact')" class="hover:text-white transition">Contact Us</button></li>
@@ -1947,12 +2522,53 @@
 
         function handleEnquirySubmit(e) {
             e.preventDefault();
-            const success = document.getElementById('modalSuccess');
-            success.classList.remove('hidden');
-            setTimeout(() => {
-                closeEnquiryModal();
-                e.target.reset();
-            }, 1800);
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn ? submitBtn.innerHTML : 'Submit Enquiry';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+            }
+
+            const payload = {
+                formType: "Admission / Course Enquiry Modal",
+                course: document.getElementById('modalSelectedCourse').value || 'Course Admission',
+                name: document.getElementById('modalStudentName').value,
+                phone: document.getElementById('modalStudentPhone').value,
+                query: document.getElementById('modalStudentQuery').value || 'None',
+                institute: "Shivashti Group of IIT (Keharwin Chowk)",
+                to_email: "sonu12004@gmail.com"
+            };
+
+            fetch('https://formspree.io/f/xoevdaon', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(payload)
+            }).then(response => {
+                const success = document.getElementById('modalSuccess');
+                if (success) success.classList.remove('hidden');
+                setTimeout(() => {
+                    closeEnquiryModal();
+                    e.target.reset();
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+                    }
+                }, 2000);
+            }).catch(err => {
+                const success = document.getElementById('modalSuccess');
+                if (success) {
+                    success.textContent = "Thank you! Enquiry received. We will contact you soon.";
+                    success.classList.remove('hidden');
+                }
+                setTimeout(() => {
+                    closeEnquiryModal();
+                    e.target.reset();
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+                    }
+                }, 2000);
+            });
         }
 
         function sendDirectWhatsAppEnquiry() {
@@ -1964,15 +2580,332 @@
 
         function handleContactForm(e) {
             e.preventDefault();
-            const success = document.getElementById('contactSuccessNotice');
-            success.classList.remove('hidden');
-            setTimeout(() => {
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn ? submitBtn.innerHTML : 'Submit Inquiry';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending message...';
+            }
+
+            const payload = {
+                formType: "Main Academic / Contact Us Form",
+                name: document.getElementById('cntName').value,
+                phone: document.getElementById('cntPhone').value,
+                email: document.getElementById('cntEmail').value || 'Not provided',
+                subject: document.getElementById('cntSubject').value,
+                message: document.getElementById('cntMessage').value || 'None',
+                institute: "Shivashti Group of IIT (Keharwin Chowk)",
+                to_email: "sonu12004@gmail.com"
+            };
+
+            fetch('https://formspree.io/f/xoevdaon', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(payload)
+            }).then(response => {
+                const success = document.getElementById('contactSuccessNotice');
+                if (success) success.classList.remove('hidden');
                 e.target.reset();
-            }, 600);
-            setTimeout(() => {
-                success.classList.add('hidden');
-            }, 5000);
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }
+                setTimeout(() => {
+                    if (success) success.classList.add('hidden');
+                }, 6000);
+            }).catch(err => {
+                const success = document.getElementById('contactSuccessNotice');
+                if (success) {
+                    success.textContent = "Thank you! Message received. Office desk will contact you.";
+                    success.classList.remove('hidden');
+                }
+                e.target.reset();
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }
+            });
         }
+    
+        // ----------------------------------------------------
+        // DESIGN SAMPLES FILTER & LIGHTBOX
+        // ----------------------------------------------------
+        function filterSamples(category) {
+            const items = document.querySelectorAll('.sample-item');
+            const buttons = document.querySelectorAll('.sample-filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                    btn.classList.add('bg-sgiit-blue', 'text-white');
+                } else {
+                    btn.classList.remove('bg-sgiit-blue', 'text-white');
+                    btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        function openLightbox(imgSrc, title) {
+            const modal = document.getElementById('sampleLightboxModal');
+            const img = document.getElementById('lightboxImage');
+            const caption = document.getElementById('lightboxTitle');
+            if (!modal || !img) return;
+
+            img.src = imgSrc;
+            caption.textContent = title || 'Design Sample';
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('sampleLightboxModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // ----------------------------------------------------
+        // HOME CREATIVE PORTFOLIO AUTO-ROTATION CAROUSEL
+        // ----------------------------------------------------
+        const homeShowcaseSamples = [
+            {
+                        "file": "sample_rumilyzer.jpg",
+                        "title": "Colab Falanghina Wine Bottle",
+                        "tag": "3D Wine Mockup",
+                        "color": "text-purple-700 bg-purple-50",
+                        "desc": "Intricate folk-art illustrated wine bottle label and realistic 3D mockup designed by Sanjeev Sharma."
+            },
+            {
+                        "file": "sample_taxial_logo.jpg",
+                        "title": "Union Road Shiraz Wine Bottle",
+                        "tag": "Wine Packaging",
+                        "color": "text-purple-700 bg-purple-50",
+                        "desc": "Minimalist luxury wine bottle with gold-foiled monogram and organic topographical contour art."
+            },
+            {
+                        "file": "sample_medcosa_pain_relief.jpg",
+                        "title": "Medcosa Pain Relief Lidocaine 3D Box",
+                        "tag": "Pharma Packaging",
+                        "color": "text-yellow-700 bg-yellow-50",
+                        "desc": "Bold Swiss typography pharmaceutical numbing cream packaging carton 3D mockup."
+            },
+            {
+                        "file": "sample_medcosa_jelly.jpg",
+                        "title": "Medcosa Sterile Lubricating Jelly Box",
+                        "tag": "Pharma Packaging",
+                        "color": "text-cyan-700 bg-cyan-50",
+                        "desc": "Medical grade sterile lubricating jelly carton box 3D isometric mockup."
+            },
+            {
+                        "file": "sample_aloevera_shampoo.jpg",
+                        "title": "Aloevera Herbal Shampoo Label",
+                        "tag": "Cosmetic Label",
+                        "color": "text-emerald-700 bg-emerald-50",
+                        "desc": "200ml herbal cosmetic shampoo packaging label layout with botanical ingredients and MRP details."
+            },
+            {
+                        "file": "sample_glow_pet_shampoo.jpg",
+                        "title": "Glow Pet Veterinary Herbal Shampoo",
+                        "tag": "Veterinary Packaging",
+                        "color": "text-blue-700 bg-blue-50",
+                        "desc": "Atlantiz Pet Pharma dog conditioning shampoo label layout featuring custom Dalmatian artwork."
+            },
+            {
+                        "file": "sample_car_cleaner.jpg",
+                        "title": "iSSeey Hand Sanitizer Gel Bottles",
+                        "tag": "Bottle Packaging",
+                        "color": "text-emerald-700 bg-emerald-50",
+                        "desc": "Dual variant Aloe Vera and Lemon hand sanitizer spray bottle labels with realistic bottle render."
+            },
+            {
+                        "file": "sample_magnetic_eyelash.jpg",
+                        "title": "CBD Body Lotion Pump Bottle Mockup",
+                        "tag": "Cosmetic Mockup",
+                        "color": "text-emerald-700 bg-emerald-50",
+                        "desc": "Dark cosmetic pump bottle label and realistic 3D bottle mockup with Kiwi Mint aroma branding."
+            },
+            {
+                        "file": "sample_hafny_bike_mirror.jpg",
+                        "title": "Hafny Handlebar Bike Mirror Card",
+                        "tag": "Retail Blister Pack",
+                        "color": "text-rose-700 bg-rose-50",
+                        "desc": "Cycle handlebar mirror retail hanging blister card packaging layout with technical diagrams."
+            },
+            {
+                        "file": "sample_positive_beverage.jpg",
+                        "title": "Positive Beverage 12-Can Master Carton",
+                        "tag": "Carton Packaging",
+                        "color": "text-cyan-700 bg-cyan-50",
+                        "desc": "Commercial 12-pack sparkling fruit beverage master carton packaging box design with flavor icons."
+            },
+            
+{
+    "file": "sample_bog.jpg",
+    "title": "Alpha Paw Neutral Dog Food Bag",
+    "tag": "3D Packaging",
+    "color": "text-amber-700 bg-amber-50",
+    "desc": "Premium pet food bag 3D pouch packaging design featuring bold typography and bulldog visual mockup."
+},
+
+
+{
+                        "file": "sample_eveasy_boxes.jpg",
+                        "title": "Eveasy Sanitary Napkin 3D Display Boxes",
+                        "tag": "3D Box Display",
+                        "color": "text-rose-700 bg-rose-50",
+                        "desc": "Vibrant feminine hygiene product packaging box design showcased in 3D perspective display."
+            },
+            {
+                        "file": "sample_wine_bottle.jpg",
+                        "title": "2020 Vision Auto Glass Cleaner Ad",
+                        "tag": "Commercial Ad",
+                        "color": "text-lime-700 bg-lime-50",
+                        "desc": "Dynamic automotive detailing product advertisement poster featuring sleek sports car visual."
+            },
+            {
+                        "file": "sample_cbd_lotion.jpg",
+                        "title": "Detail Depot Automotive Detailer Poster",
+                        "tag": "Product Poster",
+                        "color": "text-sky-700 bg-sky-50",
+                        "desc": "High-contrast automotive interior cleaning spray promotional advertising banner."
+            },
+            {
+                        "file": "sample_ahmed_menu.jpg",
+                        "title": "Ahmed Punjabi Restaurant Menu Card",
+                        "tag": "Restaurant Menu",
+                        "color": "text-amber-700 bg-amber-50",
+                        "desc": "Vibrant full-spread restaurant menu layout with authentic street food, combos, and curries."
+            },
+            {
+                        "file": "sample_stendhal_poster.jpg",
+                        "title": "Sydney Theatre School Event Poster",
+                        "tag": "Theater Poster",
+                        "color": "text-purple-700 bg-purple-50",
+                        "desc": "High-concept sci-fi theater event poster with deep space celestial nebula and planet artwork."
+            },
+            {
+                        "file": "sample_adilnavs_pharma.jpg",
+                        "title": "Adilnavs Pharmaceuticals Corporate Logo",
+                        "tag": "Logo Branding",
+                        "color": "text-red-700 bg-red-50",
+                        "desc": "Modern corporate pharmaceutical brand mark with dynamic geometric checkmark chevron symbol."
+            },
+            {
+                        "file": "sample_tai_ranch_logo.jpg",
+                        "title": "TAI Big Rock Ranch Oregon Brand Logo",
+                        "tag": "Logo Branding",
+                        "color": "text-slate-800 bg-slate-100",
+                        "desc": "Minimalist geometric ranch monogram logo with stylized animal motif on textured canvas."
+            },
+            {
+                        "file": "sample_visiting_card.jpg",
+                        "title": "Taxial Architectural Housing Logo",
+                        "tag": "Logo Branding",
+                        "color": "text-slate-800 bg-slate-100",
+                        "desc": "Geometric architectural housing logo embossed on premium textured luxury paper stock."
+            },
+            {
+                        "file": "sample_teatment.jpg",
+                        "title": "Zumpolle B.V. Corporate Brand Logo",
+                        "tag": "Logo Branding",
+                        "color": "text-red-700 bg-red-50",
+                        "desc": "Distinctive red and charcoal circular corporate embossed logo mark on textured paper."
+            }
+];
+
+        let homeCarouselPage = 0;
+        const itemsPerPage = 4;
+        const totalPages = Math.ceil(homeShowcaseSamples.length / itemsPerPage);
+        let homeCarouselInterval = null;
+
+        function renderHomeCarousel() {
+            const grid = document.getElementById('homeShowcaseGrid');
+            const statusText = document.getElementById('homeShowcaseStatusText');
+            const dotsContainer = document.getElementById('homeShowcaseDots');
+            if (!grid) return;
+
+            // Smooth fade
+            grid.style.opacity = '0';
+            grid.style.transform = 'translateY(6px)';
+
+            setTimeout(() => {
+                const startIndex = homeCarouselPage * itemsPerPage;
+                const pageItems = homeShowcaseSamples.slice(startIndex, startIndex + itemsPerPage);
+
+                grid.innerHTML = pageItems.map(item => `
+                    <div class="bg-slate-50/90 rounded-3xl border border-slate-200 shadow-2xs overflow-hidden hover:border-sgiit-red hover:shadow-subtle-card transition-all duration-300 group flex flex-col justify-between">
+                        <div class="relative bg-slate-100 aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openLightbox('assets/samples/${item.file}', '${item.title}')">
+                            <img src="assets/samples/${item.file}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5 backdrop-blur-2xs">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> View Preview
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col justify-between flex-grow">
+                            <div>
+                                <span class="text-[9px] font-extrabold uppercase px-2 py-0.5 rounded ${item.color}">${item.tag}</span>
+                                <h4 class="text-xs font-bold text-slate-900 mt-2 line-clamp-1">${item.title}</h4>
+                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">${item.desc}</p>
+                            </div>
+                            <div class="mt-3 pt-2.5 border-t border-slate-200 flex items-center justify-between">
+                                <span class="text-[10px] text-slate-400 font-semibold">Custom Work</span>
+                                <a href="https://wa.me/919888297705?text=Hello%20Sanjeev%20Sir,%20I%20saw%20your%20design%20'${encodeURIComponent(item.title)}'%20on%20website%20and%20want%20to%20order." target="_blank" class="text-xs text-emerald-600 font-bold hover:underline flex items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp text-xs"></i> Order
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                // Update text status
+                const endIndex = Math.min(startIndex + itemsPerPage, homeShowcaseSamples.length);
+                if (statusText) statusText.textContent = `Showing Designs ${startIndex + 1} - ${endIndex} of ${homeShowcaseSamples.length} (Auto-Rotating)`;
+
+                // Update dots
+                if (dotsContainer) {
+                    dotsContainer.innerHTML = Array.from({ length: totalPages }).map((_, idx) => `
+                        <button onclick="setHomeCarouselPage(${idx})" class="w-${idx === homeCarouselPage ? '6' : '2'} h-2 rounded-full ${idx === homeCarouselPage ? 'bg-sgiit-blue' : 'bg-slate-300'} transition-all duration-300" aria-label="Page ${idx + 1}"></button>
+                    `).join('');
+                }
+
+                grid.style.opacity = '1';
+                grid.style.transform = 'translateY(0)';
+            }, 250);
+        }
+
+        function setHomeCarouselPage(idx) {
+            homeCarouselPage = idx;
+            renderHomeCarousel();
+            restartHomeTimer();
+        }
+
+        function nextHomeSlide() {
+            homeCarouselPage = (homeCarouselPage + 1) % totalPages;
+            renderHomeCarousel();
+            restartHomeTimer();
+        }
+
+        function prevHomeSlide() {
+            homeCarouselPage = (homeCarouselPage - 1 + totalPages) % totalPages;
+            renderHomeCarousel();
+            restartHomeTimer();
+        }
+
+        function restartHomeTimer() {
+            if (homeCarouselInterval) clearInterval(homeCarouselInterval);
+            homeCarouselInterval = setInterval(() => {
+                homeCarouselPage = (homeCarouselPage + 1) % totalPages;
+                renderHomeCarousel();
+            }, 4000); // Rotates every 4 seconds!
+        }
+
+        // Initialize Home Carousel
+        renderHomeCarousel();
+        restartHomeTimer();
     </script>
 </body>
 </html>
